@@ -2,6 +2,14 @@
 
 Scope Console is a local Windows endoscope viewer and evidence-based USB diagnostic. It operates standards-compliant USB Video Class (UVC) cameras through the browser's MediaDevices API and reports the Windows PnP, driver, DirectShow, and Surface dock state beside the video.
 
+<!-- project-downloads:start -->
+## APK and installer downloads
+
+No packaged APK or desktop installer is currently published for this repository. The source archive below is not an installer; use the project-specific setup and build instructions.
+
+- [Download the complete source ZIP](https://github.com/jwgmpi-wolff/scopecamera/archive/refs/heads/main.zip).
+<!-- project-downloads:end -->
+
 ## Verified Finding
 
 Observed on `WOLFFSURFACEPC` on August 21, 2026:
@@ -71,3 +79,9 @@ npm audit --omit=dev
 - Microsoft, [USB Video Class Driver Overview](https://learn.microsoft.com/windows-hardware/drivers/stream/usb-video-class-driver-overview): UVC devices use the system-provided `Usbvideo.sys`; compliant devices do not require a vendor driver.
 - Microsoft, [USB Device Descriptors](https://learn.microsoft.com/windows-hardware/drivers/usbcon/usb-device-descriptors): Windows obtains `idVendor` and `idProduct` from the device descriptor and constructs the hardware ID used for driver matching.
 - Uwe Sieber, [USB Device Tree Viewer](https://www.uwe-sieber.de/usbtreeview_e.html): documents hub-port status and the `VID_0000&PID_0001/0002/0004` signature when a device does not answer the descriptor request.
+
+## Copyright
+
+Copyright (c) 2026 Jerry Wolff. See [COPYRIGHT](COPYRIGHT) for the scope of this
+notice. Existing licenses and third-party attribution remain unchanged; this
+notice does not grant additional permissions.
